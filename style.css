@@ -193,7 +193,8 @@
   .card-end-icon {
     width: 48px;
     height: 48px;
-    /* margin-left: 130px; */
+
+    margin-left: 130px;
     /* padding-top: 180px;
     padding-bottom: 342px; */
     /* position: absolute; */
@@ -201,7 +202,6 @@
   .card-end-text-background {
     color: var(--text-white);
     width: 284px;
-    height: 70px;
     /* padding-top: 3rem; */
     /* margin-left: 20px; */
     display: inline-block;
@@ -247,6 +247,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card-footer {
+    background-color: var(--primary-normal);
+    margin-top: rem;
+    width: 320px;
+    height: 196px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+  }
+  .card-end-logo {
+
+    color: var(--text-white);
+    width: 27px;
+    height: 24px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 20px; */
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+  .card-end-logo-title {
+    width: 140px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-end-contact{
+    display: flex;
+justify-content: space-between;
+width: 80%;
   }
 }
 @media only screen and (max-width: 320px) {
