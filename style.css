@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-normal: #7f56d9;
   --primary-Light: #c7a0f9;
   --background: #f9fafb;
@@ -7,8 +7,20 @@
   --text-white: #ffffff;
   --linear-gradient: (90deg, #8932f6 -6.25%, rgba(27, 21, 43, 0) 212.03%);
   font-size: 62.5%;
-}
+} */
 @media only screen and (max-width: 320px) {
+  :root {
+    --primary-normal: #7f56d9;
+    --primary-Light: #c7a0f9;
+    --background: #f9fafb;
+    --dark-blue: #1b152b;
+    --text-gray: #7a7d9c;
+    --text-white: #ffffff;
+    --linear-gradient: (90deg, #8932f6 -6.25%, rgba(27, 21, 43, 0) 212.03%);
+    font-size: 62.5%;
+    font-family: "inter";
+  }
+
   .nav {
     background-color: var(--dark-blue);
     border-radius: 4.7rem;
@@ -139,6 +151,12 @@
   .hero__body {
     color: var(--text-gray);
   }
+  .hero__tbody {
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+  }
+
   .card {
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -166,10 +184,69 @@
     height: 570px;
     border: 1px;
     border-radius: 24px;
+    padding-top: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .card-end-icon {
     width: 48px;
     height: 48px;
+    /* margin-left: 130px; */
+    /* padding-top: 180px;
+    padding-bottom: 342px; */
+    /* position: absolute; */
+  }
+  .card-end-text-background {
+    color: var(--text-white);
+    width: 284px;
+    height: 70px;
+    /* padding-top: 3rem; */
+    /* margin-left: 20px; */
+    display: inline-block;
+    text-align: center;
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+  }
+  .hero-white-title {
+    /* margin-top: 200px; */
+    font-size: 2rem;
+  }
+  /* .card-end-form {
+    display: flex;
+    flex-direction: column;
+  } */
+  .card-end-input {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: var(--text-white);
+    color: var(--text-gray);
+    width: 284px;
+    height: 48px;
+    /* margin: 341px 13px 181px 14px; */
+  }
+  .card-end-button {
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 209px;
+    height: 42px;
+    background-color: var(--primary-normal);
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-end-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 320px) {
